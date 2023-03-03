@@ -1,17 +1,9 @@
 <div id="<%= dom_id article %>">
+  
+<h1><%= @article.title %></h1>
   <p>
-    <strong>Title:</strong>
-    <%= article.title %>
-  </p>
-
-  <p>
-    <strong>Body:</strong>
-    <%= article.body %>
-  </p>
-
-  <p>
-    <strong>Image url:</strong>
-    <%= article.image_url %>
+    <%= @article.image_url, align: 'right' %>
+    <%= @article.body %>
   </p>
 
 </div>
